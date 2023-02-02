@@ -22,7 +22,7 @@ In order to run the application on your local machine, you can proceed in differ
 
 <div style="text-align: justify">
 
-4) Clone and run the ***Order Service*** and the ***Support Service***. You can run one or theother first, order does't matter. The repositories are available at the following URLs:
+4) Clone and run in the following order the ***Order Service*** and the ***Support Service***. You can run one or theother first, order does't matter. The repositories are available at the following URLs:
 </div>
 
 - **```Order Service:```** https://github.com/alereale/melita-order-service.git (```dev```)
