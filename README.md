@@ -13,7 +13,7 @@ In order to run the application on your local machine, you can proceed in differ
 
 1) You need ***Zipkin Server*** up and running. Zipkin can can be cloned from the official repository at https://github.com/openzipkin/zipkin.git. You will find proper instructions in their very detailed README or at https://zipkin.io/. Zipkin can also be excluded from the architecture, but you need to remove its dependency from the services using it.
 2) The ***RabbitMQ Server*** must be up and running on your machine.
-3) The ***Configuration Server*** and the Discovery Service must be up and running. Clone the projects from the URLs below and run them in the same order. Refer to the branchs indicated in brackets:
+3) The ***Configuration Server*** and the ***Discovery Service*** must be up and running. Clone the projects from the URLs below and run them in the same order. Refer to the branchs indicated in brackets:
 </div>
 
 - **```Configuration Server:```** https://github.com/alereale/melita-config-server.git (```dev```)
