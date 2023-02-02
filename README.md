@@ -74,10 +74,6 @@ You can add/delete/change dummy data in ```data.xml``` file.
 
 Once the application is up and running, you will be able to access the database through the console accessible by browsing to **[http://localhost:8847/h2](http://localhost:8847/h2 "h2-console")**.
 Credentials to access the console are provided in the application property file stored in the Melita Config Repo.
-## _RabbitMQ Server_
-<div style="text-align: justify">
-RabbitMQ Server needs authentication and you need to use the default credentials provided in the application property file stored in the Melita Config Repo. 
-</div>
 
 ## _Security_
 <div style="text-align: justify">
