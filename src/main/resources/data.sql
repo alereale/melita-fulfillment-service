@@ -1,0 +1,23 @@
+INSERT INTO CUSTOMERS(id, first_name, last_name, email, phone_number) VALUES
+(1, 'CLIENT', 'ONE',  'CLIENT.ONE@TEST.COM', '+39371000001'),
+(2, 'CLIENT', 'TWO', 'CLIENT.TWO@TEST.COM', '+39371000002'),
+(3, 'CLIENT', 'THREE', 'CLIENT.THREE@TEST.COM', '+39371000003');
+
+INSERT INTO PRODUCTS(id, category) VALUES
+(1, 'INTERNET'),
+(2, 'TV'),
+(3, 'TELEPHONY'),
+(4, 'MOBILE');
+
+INSERT INTO PACKAGES(id, name, product_id) VALUES
+(1, '250 MBPS', 1),
+(2, '1 GBPS', 1),
+(3, '90 CHANNELS', 2),
+(4, '140 CHANNELS', 2),
+(5, 'FREE ON NET CALLS', 3),
+(6, 'UNLIMITED CALLS', 3),
+(7, 'PREPAID', 4),
+(8, 'POSTPAID', 4);
+
+
+

@@ -1,0 +1,334 @@
+{
+	"info": {
+		"_postman_id": "86034f6f-2722-497b-acab-7f184e5e48f6",
+		"name": "Melita",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Task1",
+			"item": [
+				{
+					"name": "OrderService",
+					"item": [
+						{
+							"name": "OderController",
+							"item": [
+								{
+									"name": "/api/order/new",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "adminPwd",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "admin",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"customer_id\":1,\r\n    \"installation_date\": \"2023-02-27\",\r\n    \"installation_time\": \"08:25\",\r\n    \"installation_address\": \"Via dei giraosli 6\",\r\n    \"products\": [\r\n        {\r\n            \"id\":1,\r\n            \"category\":\"INTERNET\",\r\n            \"packages\": [\r\n                {\r\n                    \"id\":1,\r\n                    \"name\":\"250 MBPS\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"id\":4,\r\n            \"category\":\"MOBILE\",\r\n            \"packages\": [\r\n                {\r\n                    \"id\":7,\r\n                    \"name\":\"PREPAID\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8841/api/order/new",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8841",
+											"path": [
+												"api",
+												"order",
+												"new"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Task2",
+			"item": [
+				{
+					"name": "OrderService",
+					"item": [
+						{
+							"name": "OderController",
+							"item": [
+								{
+									"name": "/api/order/new",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "adminPwd",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "admin",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"customer_id\":1,\r\n    \"installation_date\": \"2032-01-01\",\r\n    \"installation_time\": \"17:30\",\r\n    \"installation_address\": \"Aurikelstraat 28\",\r\n    \"products\": [\r\n        {\r\n            \"product_id\":1,\r\n            \"product_category\":\"INTERNET\",\r\n            \"product_packages\": [\r\n                {\r\n                    \"package_id\":1,\r\n                    \"package_name\":\"250 MBPS\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"product_id\":4,\r\n            \"product_category\":\"MOBILE\",\r\n            \"product_packages\": [\r\n                {\r\n                    \"package_id\":7,\r\n                    \"package_name\":\"PREPAID\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8841/api/order/new",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8841",
+											"path": [
+												"api",
+												"order",
+												"new"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Support Service",
+					"item": [
+						{
+							"name": "OderController",
+							"item": [
+								{
+									"name": "/api/support/order/update-and-approve",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "username",
+													"value": "admin",
+													"type": "string"
+												},
+												{
+													"key": "password",
+													"value": "adminPwd",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\":1,\r\n    \"customer_id\":1,\r\n    \"installation_date\": \"2032-01-01\",\r\n    \"installation_time\": \"15:30\",\r\n    \"installation_address\": \"Aurikelstraat 28\",\r\n    \"products\": [\r\n        {\r\n            \"id\":1,\r\n            \"category\":\"INTERNET\",\r\n            \"packages\": [\r\n                {\r\n                    \"id\":1,\r\n                    \"name\":\"250 MBPS\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"id\":4,\r\n            \"category\":\"MOBILE\",\r\n            \"packages\": [\r\n                {\r\n                    \"id\":7,\r\n                    \"name\":\"PREPAID\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8841/api/support/order/update-and-approve",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8841",
+											"path": [
+												"api",
+												"support",
+												"order",
+												"update-and-approve"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/api/support/order/set-to-fulfillment",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "adminPwd",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "admin",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8845/api/support/order/send-to-fulfillment?orderId=1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8845",
+											"path": [
+												"api",
+												"support",
+												"order",
+												"send-to-fulfillment"
+											],
+											"query": [
+												{
+													"key": "orderId",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Fulfillment Service",
+					"item": [
+						{
+							"name": "OderController",
+							"item": [
+								{
+									"name": "/api/order/update",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "adminPwd",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "admin",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"id\":1,\r\n    \"customer_id\":1,\r\n    \"installation_date\": \"2032-01-01\",\r\n    \"installation_time\": \"15:30\",\r\n    \"installation_address\": \"Aurikelstraat 28\",\r\n    \"products\": [\r\n        {\r\n            \"id\":1,\r\n            \"category\":\"INTERNET\",\r\n            \"packages\": [\r\n                {\r\n                    \"id\":1,\r\n                    \"name\":\"250 MBPS\"\r\n                }\r\n            ]\r\n        },\r\n        {\r\n            \"id\":4,\r\n            \"category\":\"MOBILE\",\r\n            \"packages\": [\r\n                {\r\n                    \"id\":7,\r\n                    \"name\":\"PREPAID\"\r\n                }\r\n            ]\r\n        }\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:8841/api/fulfill/order-update",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8841",
+											"path": [
+												"api",
+												"fulfill",
+												"order-update"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "/api/fulfill/prepare-order",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "userPwd",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "user",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8841/api/fulfill/prepare-order?orderId=1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8841",
+											"path": [
+												"api",
+												"fulfill",
+												"prepare-order"
+											],
+											"query": [
+												{
+													"key": "orderId",
+													"value": "1"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
